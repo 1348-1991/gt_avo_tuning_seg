@@ -355,6 +355,7 @@ for i in range(0, ntrc):
 #   AVO inversion for NI and GRAD from analytic and convolved reflectivity
 #   values and print the results to the command line.  Linear least squares
 #   method is used for estimating NI and GRAD coefficients.
+#TODO: ckeck the equation!!!!
 Yzoep = np.array(rc_zoep_pp[:,0])
 Yzoep = Yzoep.reshape((ntrc, 1))
 
@@ -370,6 +371,7 @@ sintheta2 = sintheta2.reshape((ntrc, 1))
 X = np.hstack((ones, sintheta2))
 
 #   ... matrix solution of normal equations
+#TODO: ckeck the equation!!!!
 Azoep = np.dot(np.dot(np.linalg.inv(np.dot(X.T, X)), X.T), Yzoep)
 Aconv = np.dot(np.dot(np.linalg.inv(np.dot(X.T, X)), X.T), Yconv)
 

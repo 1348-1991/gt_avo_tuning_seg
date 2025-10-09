@@ -214,8 +214,17 @@ nmodel = int((dz_max-dz_min)/dz_step+1)
 #   Generate ricker wavelet
 wvlt_t, wvlt_amp = ricker(wvlt_cfreq, wvlt_phase, dt, wvlt_length)
 
+print('Wavelet length = {0} s'.format(str(wvlt_length)))
+plt.plot(wvlt_t, wvlt_amp)
+plt.title('Ricker* wavelet (cfreq = {0} Hz)'.format(str(wvlt_cfreq)))
+plt.xlabel('Time (s)')  
+plt.show()
+
+
 #   Calculate reflectivities from model parameters
 rc_int = calc_rc(vp_mod, rho_mod)
+
+
 
 
 syn_zo = []

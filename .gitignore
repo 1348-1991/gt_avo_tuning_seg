@@ -1,0 +1,101 @@
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# === ENVIRONMENT ===
+# Virtual environments
+venv/
+env/
+.venv/
+venv*/
+env*/
+.venv*/
+
+# Conda environment
+*.conda
+.miniconda/
+
+# Environment variables
+.env
+.venv
+
+# === NOTEBOOKS ===
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# === IDE/EDITORS ===
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Jupyter
+.jupyter/
+
+# === SISTEMA ===
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === DADOS SÍSMICOS (CRÍTICO!) ===
+# Dados sísmicos grandes - NÃO versionar!
+*.sgy
+*.segy
+*.segy.gz
+*.su
+*.su.gz
+
+# Dados de processamento
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# Resultados temporários
+/temp/
+/tmp/
+/outputs/
+/results/
+/processed_data/
+
+# === LOGS ===
+*.log
+*.tmp
+*.temp
+
+# === CONFIGURAÇÕES SENSÍVEIS ===
+config.ini
+secrets.py
+*.key
+*.pem
+*.cert
+config.yaml
+config.yml
